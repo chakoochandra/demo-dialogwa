@@ -8,7 +8,7 @@ class CurlSender
     public function send_image()
     {
         try {
-            $nomor_tujuan = '628988588885'; // Set nomor tujuan pengiriman pesan
+            $nomor_tujuan = '628123....'; // Set nomor tujuan pengiriman pesan
             $pesan = 'tes kirim image menggunakan php';
             $filepath = 'files/sample.png';
 

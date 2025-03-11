@@ -7,7 +7,7 @@ class CurlSender
 
     public function send_text()
     {
-        $nomor_tujuan = '628988588885'; //set nomor tujuan pengirima pesan
+        $nomor_tujuan = '628123....'; //set nomor tujuan pengirima pesan
         $pesan = 'tes kirim pesan menggunakan php';
 
         // Data yang akan dikirim dalam body request

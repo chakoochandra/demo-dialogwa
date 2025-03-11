@@ -8,7 +8,7 @@ class CurlSender
     public function send_doc()
     {
         try {
-            $nomor_tujuan = '628988588885'; // Set nomor tujuan pengiriman pesan
+            $nomor_tujuan = '628123....'; // Set nomor tujuan pengiriman pesan
             $pesan = 'tes kirim file dokumen menggunakan php';
             $filepath = 'files/sample.doc';
 
