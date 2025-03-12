@@ -16,7 +16,6 @@ class CurlSender
             $data = [
                 'session' => $this->_session,
                 'target' => $nomor_tujuan,
-                
                 'message' => $pesan,
                 'file' => $base64File,
             ];

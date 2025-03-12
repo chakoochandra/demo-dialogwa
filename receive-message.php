@@ -61,7 +61,16 @@ function get_response($message)
         return "Jadwal sidang nomor perkara $no_perkara .....";
     }
 
-    return false;
+    // Pengecekan format pesan dst...
+
+    $formats = array_merge(array_keys($responses), [
+        'ac#[nomor perkara]',
+        'jadwal#[nomor perkara]',
+    ]);
+
+    return "*Format yang tersedia*
+• " . implode("
+• ", $formats);
 }
 
 http_response_code(400); // Bad Request if no valid response

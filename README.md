@@ -9,28 +9,32 @@ DialogWA support pengiriman pesan teks maupun file gambar, dokumen, pdf, dan bas
 ### Mengirim Teks
 
 Endpoint : https://dialogwa.web.id/api/send-text
+
 Method : POST
-Format data yang dikirimkan :
+
+Format JSON yang dikirimkan :
 ```
-array(
-    'session' => 'nama_sesi',
-    'target' => 'nomor_tujuan', // nomor tujuan harus menggunakan kode negara contoh : 628123456789
-    'message' => 'pesan yang akan dikirimkan'
-)
+{
+    "session": "nama_sesi",
+    "target": "nomor_tujuan",
+    "message": "pesan yang akan dikirimkan"
+}
 ```
 
 ### Mengirim File
 
 Endpoint : https://dialogwa.web.id/api/send-media
+
 Method : POST
+
 Format data yang dikirimkan :
 ```
-array(
-    'session' => 'nama_sesi',
-    'target' => 'nomor_tujuan', // nomor tujuan harus menggunakan kode negara contoh : 628123456789
-    'message' => 'pesan yang akan dikirimkan'
-    'file' => 'code base64 dari file'
-)
+{
+    "session": "nama_sesi",
+    "target": "nomor_tujuan",
+    "message": "pesan yang akan dikirimkan",
+    "file": "code base64 dari file"
+}
 ```
 
 ## Webhook 
