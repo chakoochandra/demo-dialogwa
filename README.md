@@ -6,6 +6,10 @@ Snippet code menggunakan php untuk melakukan pengiriman pesan text dan file, ser
 
 DialogWA support pengiriman pesan teks maupun file gambar, dokumen, pdf, dan base64
 
+```
+Semua request dikirim menggunakan Bearer Token Authorization. Token dapat dilihat pada halaman profile akun DialogWA Anda. Sedangkan sesi adalah nama sesi yang Anda buat ketika menyambungkan nomor whatsapp sebagai bot. Untuk demo ini, yang digunakan adalah sesi dan token demo.
+```
+
 ### Mengirim Teks
 
 Endpoint : https://dialogwa.web.id/api/send-text
